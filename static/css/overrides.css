@@ -1,0 +1,136 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+.primary {
+    background-color: #bbb;
+    display: block;
+    width: 100%;
+    color: #fff;
+}
+
+.primary:hover {
+    background-color: #eee;
+    cursor: crosshair;
+    transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.header {
+    display: none;
+    border: solid 1px rgba(0,0,0,0.25);
+    background-color: rgb(240, 240, 240);
+    line-height: 60px;
+    font-size: 24px;
+    border-radius: 8px 8px 0 0 ;
+}
+
+.header .col {
+    border-right: solid 1px rgba(0,0,0,0.25);
+    font-weight: 600;
+    border-bottom: none;
+}
+
+.header .col:last-child {
+    border: none;
+}
+
+.list-group-item {
+    padding: 0;
+}
+
+.wrapper {
+    border: solid 1px rgba(0,0,0,0.25);
+    border-right: none;
+}
+
+.flex {
+    line-height: 60px;
+    padding: 0 18px;
+    width: 100%;
+    font-size: 26px;
+    border-right: solid 1px rgba(0,0,0,0.25);
+    border-bottom: solid 1px rgba(0,0,0,0.25);
+}
+
+.flexRow {
+   position: relative;
+   margin-bottom: 16px;
+   box-shadow: 0 0 5px rgba(0,0,0,0.25)
+}
+
+.time {
+    position: absolute;
+    top: 0;
+    right: 0;
+    text-align: right;
+}
+/*
+.col {
+    line-height: 60px;
+    padding: 0 18px;
+    display: block;
+    width: 100%;
+    font-size: 26px;
+    border-bottom: solid 1px #ccc;
+} */
+
+.route-number {
+    max-width: 120px;
+    text-align: center;
+    border-bottom: none;
+}
+
+.navbar {
+    margin-bottom: 40px;
+}
+
+.direction {
+    white-space: nowrap;
+    overflow: hidden;
+    word-wrap: break-word;
+    text-overflow: ellipsis;
+
+}
+
+@media only screen and (min-width: 768px)
+{
+    .flexRow {
+        display: flex;
+        flex: 1 1;
+        margin: 0;
+        box-shadow: none;
+
+    }
+
+    .flex {
+        border-bottom: none;
+    }
+
+    .header {
+        display: flex;
+    }
+
+    .small-col {
+        max-width: 15%;
+    }
+
+    .plats {
+        text-align: right;
+    }
+
+    .direction {
+        min-width: 35%;
+    }
+    .route-number {
+        max-width: 200px;
+    }
+    .time {
+        text-align: left;
+        position: relative;
+    }
+
+    .wrapper {
+        border-top: solid 1px rgba(0,0,0,0.25);
+        border-top: none;
+    }
+}

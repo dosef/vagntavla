@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Vagntavla</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous" />
+  <link rel="stylesheet" type="text/css" href="/static/css/overrides.css" />
+</head>
+
+<nav class="navbar navbar-dark" style="background-color: rgb(37, 37, 37);">
+  <div class="container">
+    <span class="mb-0 mx-auto h1" style="color: rgb(228, 228, 228);">
+      {% block nav_title %}{% endblock %}
+    </span>
+  </div>
+</nav>
+
+<div class="container">
+  {% block page_content %}{% endblock %}
+</div>

@@ -1,0 +1,24 @@
+{% extends "base.html.tera" %}
+
+{% block nav_title %}{{ departures[0].stop }}{% endblock %}
+
+{% block page_content %}
+<div class=" row header m-0">
+    <div class="col-md col route-number">Route no.</div>
+    <div class="col-md col small-col">Time</div>
+    <div class="col-md col direction">Direction</div>
+    <div class="col-md col plats small-col">Platform</div>
+</div>
+
+{% for departure in departures %}
+{% set style_param = "background-color: " ~ departure.fgColor ~ ";color:" ~ departure.bgColor %}
+<div class="flexRow wrapper">
+    <div class="flex route-number" style="{{ style_param }}">
+        {{ departure.sname }}
+    </div>
+    <div class="flex time small-col">{{ departure.rtTime }}</div>
+    <div class="flex direction">{{ departure.direction }}</div>
+    <div class="flex plats small-col">{{ departure.track }}</div>
+</div>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html.tera" %}
+
+{% block nav_title %}Vagntavla{% endblock %}
+
+{% block page_content %}
+<form method="POST">
+    <div class="form-group">
+        <input type="text" id="name" name="name" class="form-control" placeholder="Stop name"><br>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+</form>
+{% endblock %}
