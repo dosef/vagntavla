@@ -11,7 +11,7 @@
 </div>
 
 {% for departure in departures %}
-{% set style_param = "background-color: " ~ departure.fgColor ~ ";color:" ~ departure.bgColor %}
+{% set style_param = "background-color: " ~ departure.bgColor ~ ";color:" ~ departure.fgColor %}
 <div class="flexRow wrapper">
     <div class="flex route-number" style="{{ style_param }}">
         {{ departure.sname }}
